@@ -9,6 +9,7 @@ $(document).ready(function() {
     var journalWords = newEntry.journalWords();
     var vowelCount = newEntry.vowelCount();
     var consonantCount = newEntry.consonantCount();
+    var teaser = newEntry.getTeaser();
 
 
     $('.entry-title').text(title);
@@ -16,5 +17,6 @@ $(document).ready(function() {
     $('.word-count').text(journalWords);
     $('.vowel-count').text(vowelCount);
     $('.consonant-count').text(consonantCount);
+    $('.teaser').text(teaser);
   });
 });
